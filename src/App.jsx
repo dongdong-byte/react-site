@@ -1,26 +1,23 @@
-import { BrowserRouter, HashRouter, Routes } from "react-router-dom";
-import { Route } from "react-router-dom";
-// import { useState } from "react";
-import "./App.css";
-import Login from "./compo/Login";
-import Home from "./compo/Home";
-import Layout from "./compo/Layout";
-import Work1 from "./compo/Work1";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Layout from './comp/Layout';
+import Home from './comp/Home';
+import Login from './comp/Login';
+import Day04_20250812 from './comp/Day04_20250812';
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>과제방</h1>
-      <HashRouter>
+      <h1>과제 : 이정재</h1>
+      <BrowserRouter>
         <Routes>
-          <Route path="/react-site/" element={<Layout />} />
-          <Route index element={<Home />} />
-          <Route path="/react-site/login" element={<Login />} />
-          <Route path="/react-site/work1" element={<Work1 />} />
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="login" element={<Login />} />
+            <Route path="day04_0812" element={<Day04_20250812 />} />
+          </Route>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
