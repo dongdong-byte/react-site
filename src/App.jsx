@@ -3,7 +3,7 @@ import './App.css';
 import Layout from './comp/Layout';
 import Home from './comp/Home';
 import Login from './comp/Login';
-import Day04_20250812 from './comp/Day04_20250812';
+import day04_0812ex_usestate from './comp/day04_0812ex_usestate';
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
 
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="login" element={<Login />} />
-          <Route path="day04_0812ex_usestate" element={<Day04_20250812 />} />
+          <Route path="day04_0812ex_usestate" element={<day04_0812ex_usestate />} />
+          <Route path="fetch" element={<fetch />} />
         </Route>
       </Routes>
     </BrowserRouter>
