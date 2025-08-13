@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <h1>과제 김동현</h1>
+        
 
 
         <Route path="/" element={<Layout />}>

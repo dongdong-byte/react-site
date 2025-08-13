@@ -13,16 +13,16 @@ function Layout() {
             <Link to="/react-site/login">Login</Link>
           </li>
           <li>
-            <Link to="/react-site/work1">work1</Link>
-          
+            <Link to="/react-site/work1">Work1</Link>
           </li>
-        <li>
-            <Link to="/day04_0812/">day04_0812</Link>
+          <li>
+            <Link to="/react-site/day04_0812">Day04_0812</Link>
           </li>
         </ul>
       </nav>
-      <Outlet></Outlet>
+      <Outlet />
     </div>
   );
 }
+
 export default Layout;
