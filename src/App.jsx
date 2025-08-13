@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="login" element={<Login />} />
-          <Route path="day04_0812" element={<Day04_20250812 />} />
+          <Route path="day04_0812ex_usestate" element={<Day04_20250812 />} />
         </Route>
       </Routes>
     </BrowserRouter>
