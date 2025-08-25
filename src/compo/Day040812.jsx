@@ -3,7 +3,7 @@ import InputMirror from './comp/InputMirror'
 import Colorchange from './comp/Colorchange'
 import Toddlist from './comp/Toddlist'
 
-function day04_0812ex_usestate() {
+ export default function Day04_0812ex_usestate() {
 
 
   return (
@@ -23,4 +23,3 @@ function day04_0812ex_usestate() {
   )
 }
 
-export default day04_0812ex_usestate;
